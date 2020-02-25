@@ -1,6 +1,8 @@
 # Machine_Learning3_Challenge
 ### How many neurons and layers did you select for your neural network model?
+For our input layer, we created a model where the number of input features equaled the number of variables in our feature DataFrame.  In our hidden layers, we added two hidden layers with only a few neurons in each layer. All of our hidden layers will use the relu activation function to identify nonlinear characteristics from the input values.  In the output layer, we used the same parameters from our basic neural network including the sigmoid activation function.
 
 ### Were you able to achieve the target model performance? What steps did you take to try and increase model performance?
-
+We were not able to achieve the target model performance of 75%.  Intially we were able to achieve 72.37% target predictive accuracy, which is in line with a simple logistic regression score (71.77%).  After doubling our epochs to our training session (100 to 200), we see no increase in accuracy, as we achieve a target predictive accuracy of 72.29%.
 ### If you were to implement a different model to solve this classification problem, which would you choose?
+As we are looking for a binary outcome (Was the money used effectively?) I believe using Support Vector Machines would be a better model to use.  If we only compare binary classification problems, SVMs have an advantage over neural network and deep learning models because they are less prone to overfitting.  Although SVMs are limited in their potential and can still miss critical features and high-dimensionality relationships that a well-trained deep learning model could find. However, in many straightforward binary classification problems, SVMs will outperform the basic neural network, and even deep learning models with ease.
